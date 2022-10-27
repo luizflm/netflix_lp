@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.banner { /* banner img */
+    background-image:url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 700px;
+
+}
+.bg-shadow { /* banner shadow */
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    height: 100vh;
+    padding-bottom: 700px;
+    box-shadow: inset 0px 0px 800px #000;
+}
+.header-c { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 58px;
+    padding-right: 70px;
+    padding-top: 28px;
+}
+.header-left img {
+    width: 134px;
+    height: 36px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right select {
+    background: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-size: 15px;
+    padding: 8px;
+    margin-right: 40px;
+    border: 1px solid #999;
+}
+.header-right .login {
+    display: block;
+    background-color: red;
+    font-size: 16px;
+    padding: 7px 17px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+
+main {
+    margin-top: 160px;
+    color: #FFF;
+    text-align: center;
+}
+main h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+main h4 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: -25px;
+}
+main p {
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+main form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+main form button {
+    background-color: #FF0000;
+    color: #FFF;
+    font-size: 26px;
+    border: 0;
+    border-left: 1px solid #333;
+    padding: 0 24px;
+    cursor: pointer;
+}
+.email-label input {
+    font-size: 14px;
+    color: #000;
+    padding-left: 15px;
+    border: 0;
+    min-width: 450px;
+    height: 60px;
+    border: 1px solid #333;
+}
+.email-label span {
+    position: absolute;
+    color: #8c8c8c;
+    margin-top: 22px;
+    margin-left: 15px;
+    font-size: 15px;
+    cursor: text;
+    transition: all 150ms ease;
+}
+.email-label span.active {
+    font-weight: bold;
+    color:#757575;
+    font-size: 12px;
+    margin-top: 6px;
+}
